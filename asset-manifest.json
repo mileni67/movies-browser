@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/movies-browser/static/js/main.ecde658d.js",
+    "index.html": "/movies-browser/index.html",
+    "main.ecde658d.js.map": "/movies-browser/static/js/main.ecde658d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ecde658d.js"
+  ]
+}
