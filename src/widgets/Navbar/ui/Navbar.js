@@ -11,10 +11,13 @@ import {
   StyledLink,
 } from "./styled";
 
+import { useLocation } from "react-router-dom";
 import search from "../../../assets/images/search.svg";
 import camera from "../../../assets/images/camera.svg";
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <NavbarContainer>
       <LogoContainer>
@@ -23,13 +26,23 @@ const Navbar = () => {
       </LogoContainer>
 
       <LinksContainer>
-        <StyledLink to="/movies">Movies</StyledLink>
-        <StyledLink to="/people">People</StyledLink>
+        <StyledLink
+          to="/movies"
+          className={location.pathname === "/movies" ? "active" : ""}
+        >
+          Movies
+        </StyledLink>
+        <StyledLink
+          to="/people"
+          className={location.pathname === "/people" ? "active" : ""}
+        >
+          People
+        </StyledLink>
       </LinksContainer>
 
       <SearchContainer>
         <SearchIcon src={search} alt="Search Icon" />
-        <SearchText>Search movies</SearchText>
+        <SearchText>Search movies...</SearchText>
         <SearchInput type="text" />
       </SearchContainer>
     </NavbarContainer>
