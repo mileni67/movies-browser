@@ -71,7 +71,8 @@ export const LinksContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-right: 387px;
+  margin-left: 80px;
+  margin-right: 250px;
 `;
 
 export const SearchContainer = styled.div`
@@ -84,42 +85,35 @@ export const SearchContainer = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.cloudyLilac};
   border-radius: 33px;
   margin-right: 292px;
+  box-sizing: border-box;
+  overflow: hidden;
 `;
 
 export const SearchIcon = styled.img`
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 12px;
-  padding: 2.78px 2.46px 2px 2.78px;
-  pointer-events: none;
-`;
-
-export const SearchText = styled.span`
-  position: absolute;
-  top: 12px;
-  left: 64px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: ${({ theme }) => theme.colors.darkerGrey};
+  transform: translateY(-50%);
   pointer-events: none;
 `;
 
 export const SearchInput = styled.input`
   flex-grow: 1;
   height: 100%;
-  padding: 0 16px 0 200px;
+  padding: 0 16px;
+  padding-left: 48px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.darkerGrey};
   background: transparent;
   border: none;
   outline: none;
 
   &::placeholder {
-    color: transparent;
+    color: ${({ theme }) => theme.colors.darkerGrey};
+    text-align: left;
   }
 `;
