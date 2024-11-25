@@ -7,7 +7,6 @@ import {
   SearchContainer,
   SearchIcon,
   SearchInput,
-  SearchText,
   StyledLink,
 } from "./styled";
 
@@ -42,8 +41,7 @@ const Navbar = () => {
 
       <SearchContainer>
         <SearchIcon src={search} alt="Search Icon" />
-        <SearchText>Search movies...</SearchText>
-        <SearchInput type="text" />
+        <SearchInput type="text" placeholder="Search movies..." />
       </SearchContainer>
     </NavbarContainer>
   );
