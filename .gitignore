@@ -20,7 +20,7 @@
 .env
 
 # config file
-config.js
+src/shared/config/config.js
 
 npm-debug.log*
 yarn-debug.log*
