@@ -8,7 +8,7 @@ import { HashRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeProvider theme={theme}>
-    <HashRouter basename="/movies-browser">
+    <HashRouter>
       <App />
     </HashRouter>
   </ThemeProvider>
