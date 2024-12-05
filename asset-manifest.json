@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/movies-browser/static/js/main.553483ef.js",
+    "main.js": "/movies-browser/static/js/main.ba247a56.js",
     "index.html": "/movies-browser/index.html",
     "static/media/camera.svg": "/movies-browser/static/media/camera.b1e3136f6215069143578863f00ffc48.svg",
     "static/media/search.svg": "/movies-browser/static/media/search.ed3f24f20cda9bb4e005406a3f864acb.svg",
-    "main.553483ef.js.map": "/movies-browser/static/js/main.553483ef.js.map"
+    "main.ba247a56.js.map": "/movies-browser/static/js/main.ba247a56.js.map"
   },
   "entrypoints": [
-    "static/js/main.553483ef.js"
+    "static/js/main.ba247a56.js"
   ]
 }
